@@ -5,7 +5,7 @@ FROM alpine:latest as repo
 # Get repo fron github, store as stage 'repo'
 RUN apk add --no-cache git
 WORKDIR OBP-API
-RUN git clone https://github.com/OpenBankProject/OBP-API.git
+RUN git clone https://github.com/sicmx/OBP-API.git
 
 FROM maven:3-jdk-8 as maven
 # Build the source using maven, source is copied from the 'repo' build.
