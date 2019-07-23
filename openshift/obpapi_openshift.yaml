@@ -61,7 +61,7 @@ objects:
               spec:
                   containers:
                   - name: obpapi
-                    image: chrisjsimpson/obpapi-kube:latest # docker build -t obpapi-kube .
+                    image: sicmx/obp-kubernetes:latest # docker build -t obp-kubernetes .
                     resources:
                       limits:
                         memory: "800Mi"
